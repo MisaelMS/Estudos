@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Primeiro Script</title>
+
+    <style>
+
+        body{
+        background-color: #012345;
+        color: white;
+        font: normal 25pt Arial;
+        }
+
+        h1{
+            color:#a22221;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Olá, Mundo!</h1>
+    <p>Me livrei da maldição</p>
+
+    <script>
+        
+        var n1 = Number.parseInt(window.prompt('Digite um número'))
+        var n2 = Number.parseInt(window.prompt('Digite outro número'))
+
+        /*
+        Converte para numero/ Number(n); Number.parseInt(n); Number.parseFloat(n);
+        
+        Converter para String/ String(n); n.toString();
+        */
+
+        var conta = window.prompt('Qual operação?');
+
+        var soma = n1 + n2;
+        var sub = n1 - n2;
+        var mult = n1 * n2;
+        var div = n1 / n2;
+
+        if (conta == 'Adicao') {
+            alert(soma)
+        }
+    
+        if (conta == 'Subtracao') {
+            alert(sub)
+        }
+
+        if (conta == 'Multiplicacao') {
+            alert(mult)
+        }
+
+        if (conta == 'Divisao') {
+           alert(div)
+        }
+        
+        if ((conta == 'Soma') || (conta = 'Adicao') || (conta != Subtracao) && (conta != 'Subtracao')){
+        alert(`Na soma.Deu, ${soma}` ); // `` quando usado crase, é possivel botar um template string, que é ${x}
+        }
+
+
+        // x.length; quantos caracteres a string tem
+        // x.toUpperCase(); tudo para letra maiuscula
+        // x.toLowerCase(); tudo para letra minuscula
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background: rgba(38, 107, 255, 0.459);
+            color: white;
+            font: normal 18pt Arial;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Inciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim!</div><!-- msg é ID -->
+
+    <script>
+        var corpo = window.document.body;
+        var p1 = window.document.getElementsByTagName('p')[0];
+        //window.document.write(`Esta escrito assim` + p1.innerText);//pega o texto dentro do paragrafo sem nenhuma formatação
+        p1.style.color ="Blue";
+        corpo.style.background = "Black";
+        //document.write(p1.innerHTML);//Pega o que está dentro do paragrafo, com a formatação junto
+        //window.alert(p1.innerHTML);
+        
+        //var d = window.document.getElementById('msg')
+        //d.style.background = "green";
+        //d.innerText = ('Estou aguardando...')
+        //window.document.getElementById("msg").innerText = "OLA";
+
+        var d = window.document.querySelector('div#msg')
+        d.style.background = "Blue"
+        
+    </script>
+</body>
+</html>

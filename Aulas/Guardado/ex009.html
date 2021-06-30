@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu país</title>
+</head>
+<body>
+    Qual o seu país de origem: <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="clicou()">
+    <div id="res"></div>
+    <script>
+        
+        function clicou(){
+            var ori = window.document.getElementById("pais").value
+            var res = window.document.querySelector("div#res")
+            
+            if (ori.toUpperCase() == "BRASIL") {
+                res.innerHTML += `Você é BRASILEIRO, país -> ${ori}<br/>` 
+            }else{
+                res.innerHTML += `Você é gringo, país -> ${ori}<br/>`
+            }
+
+        }
+    </script>
+</body>
+</html>
